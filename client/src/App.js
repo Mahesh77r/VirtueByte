@@ -1,9 +1,11 @@
+
+import Laksh from './Pages/Laksh/Laksh';
+
 import React,{useState} from 'react'
 import { SideNavbar } from './Components/SideNavbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Mahesh } from './Pages/Mahesh';
 import Spandan from './Pages/spandan/Spandan';
-import LaxmiNarayan from './Pages/LaxmiNarayan';
 import {navigation}  from './Components/NavLink'
 function App() {
   const [isSideNavbarOpen, setIsSideNavbarOpen] = useState(true);
@@ -15,6 +17,7 @@ function App() {
 
  
   return (
+
     <>
       <BrowserRouter>
         <SideNavbar
@@ -26,7 +29,7 @@ function App() {
           <Routes>
             <Route path='/msr' element={<Mahesh/>}/>
             <Route path='/spa' element={<Spandan/>}/>
-            <Route path='/lax' element={<LaxmiNarayan/>}/>
+            <Route path='/lax' element={<Laksh/>}/>
           </Routes>
         </div>
       </BrowserRouter>
