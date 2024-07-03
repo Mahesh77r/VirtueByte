@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Mahesh } from './Pages/Mahesh';
 import Spandan from './Pages/spandan/Spandan';
 import LaxmiNarayan from './Pages/LaxmiNarayan';
-
+import {navigation}  from './Components/NavLink'
 function App() {
   const [isSideNavbarOpen, setIsSideNavbarOpen] = useState(true);
 
@@ -13,11 +13,7 @@ function App() {
   };
   const contentMargin = isSideNavbarOpen ? 'ml-64' : 'ml-16';
 
-  const navigation =[
-    { name: 'Mahesh', link: '/msr'},
-    { name: 'Spandan', link: '/spa'},
-    { name: 'Laxminarayan', link: '/lax'},
-]
+ 
   return (
     <>
       <BrowserRouter>

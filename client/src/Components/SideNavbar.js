@@ -10,8 +10,8 @@ export const SideNavbar = ({navigation,  isSideNavbarOpen, toggleSideNavbar }) =
   return (
   <>
     <div
-      className={`bg-[#000D27] min-h-screen ${isSideNavbarOpen ? "w-64" : "w-16"
-        } duration-700 text-gray-100 px-4`}
+      className={`lg:bg-[#000D27] min-h-screen ${isSideNavbarOpen ? "w-64" : "w-16"
+        } duration-700 px-4 `}
       style={{ position: "fixed"}}
     >
       <div className="pt-2 flex justify-start gap-7">
@@ -25,17 +25,16 @@ export const SideNavbar = ({navigation,  isSideNavbarOpen, toggleSideNavbar }) =
         {/* : null} */}
         
       </div>
-      <div className="flex flex-col gap-4 relative" >
+      <div className="mt-4 flex flex-col gap-4 relative" >
         {navigation.map((nav, i) => (
-         
-          
           <Link
             to={nav.link}
             key={i}
             className={
-              "group flex items-center text-base gap-7 font-medium p-1 rounded-md hover:bg-white  hover:text-[#040430]"
+              "group flex items-center duration-500 text-base gap-7 font-medium p-1 rounded-md lg:text-white lg:hover:bg-white lg:hover:text-[#040430]"
             }
           >
+            <div className="justify-start duration-500 p-0 m-0">{nav.icon}</div>
             <h2 className={`whitespace-pre duration-500 ${!isSideNavbarOpen && "opacity-0 translate-x-28 overflow-hidden"}`}>
               {nav.name}
             </h2>
