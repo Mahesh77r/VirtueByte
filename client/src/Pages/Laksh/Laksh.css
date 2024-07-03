@@ -1,0 +1,30 @@
+.about-us-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-contents{
+width: 40%;
+}
+
+.about-us-contents h1{
+    color: #6C63FF;
+    font-size: max(4vw, 20px);
+    margin-bottom: 1vw;
+    font-weight: 600;
+}
+
+.about-us-contents h5{
+    font-size: max(1vw,25px);
+    text-align: justify;
+}
+
+.about-us-image{
+    width: 40%;
+}
+
+
