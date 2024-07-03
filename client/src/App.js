@@ -13,7 +13,7 @@ function App() {
   const toggleSideNavbar = () => {
     setIsSideNavbarOpen(!isSideNavbarOpen);
   };
-  const contentMargin = isSideNavbarOpen ? 'ml-64' : 'ml-16';
+  const contentMargin = isSideNavbarOpen ? 'lg:ml-64 md:ml-20' : 'lg:ml-16 16';
 
  
   return (
@@ -25,7 +25,7 @@ function App() {
           isSideNavbarOpen={isSideNavbarOpen}
           toggleSideNavbar={toggleSideNavbar}
         />
-        <div className={`flex-1 overflow-x-hidden ${contentMargin} duration-700 `}>
+        <div className={`flex-1 overflow-x-hidden ms-10 ${contentMargin} duration-700 `}>
           <Routes>
             <Route path='/msr' element={<Mahesh/>}/>
             <Route path='/spa' element={<Spandan/>}/>

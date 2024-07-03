@@ -2,20 +2,17 @@ import React from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
-
-
-
 export const SideNavbar = ({navigation,  isSideNavbarOpen, toggleSideNavbar }) => {
  
   return (
   <>
     <div
-      className={`lg:bg-[#000D27] min-h-screen ${isSideNavbarOpen ? "w-64" : "w-16"
-        } duration-700 px-4 `}
+      className={`lg:bg-[#000D27] min-h-screen ${isSideNavbarOpen ? "w-64" : "w-16 "}
+       duration-700 px-4 z-[1000] `}
       style={{ position: "fixed"}}
     >
       <div className="pt-2 flex justify-start gap-7">
-        <div><HiMenuAlt3
+        <div className="lg:text-white md:text-black"><HiMenuAlt3
           size={26}
           className="cursor-pointer"
           onClick={toggleSideNavbar}
