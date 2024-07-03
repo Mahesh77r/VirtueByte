@@ -11,8 +11,8 @@ const ProfileIcon = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox=
 </svg>
 ;
 export const navigation =[
-    { name: 'Mahesh', link: '/msr',icon:DashboardIcon},
-    { name: 'Spandan', link: '/spa',icon:ProfileIcon},
-    { name: 'Laxminarayan', link: '/lax',icon:ProfileIcon},
+    { name: 'Home', link: '/msr',icon:DashboardIcon},
+    { name: 'Contact Us', link: '/spa',icon:ProfileIcon},
+    { name: 'About Us', link: '/lax',icon:ProfileIcon},
     { name: 'Logout', link: '/logout',icon:LogoutIcon},
 ]
