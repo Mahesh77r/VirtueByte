@@ -12,8 +12,8 @@ function App() {
   const contentMargin = isSideNavbarOpen ? 'ml-64' : 'ml-16';
 
   const navigation =[
-    { name: 'Mahesh', to: '/msr'},
-    { name: 'Spandan', to: '/spa'},
+    { name: 'Mahesh', link: '/msr'},
+    { name: 'Spandan', link: '/spa'},
     { name: 'Laxminarayan', link: '/lax'},
 ]
   return (
@@ -24,9 +24,9 @@ function App() {
           isSideNavbarOpen={isSideNavbarOpen}
           toggleSideNavbar={toggleSideNavbar}
         />
-        <div className={`flex-1 overflow-x-hidden ${contentMargin} duration-700 bg-[#ECF0F5]`}>
+        <div className={`flex-1 overflow-x-hidden ${contentMargin} duration-700 `}>
           <Routes>
-            <Route path='/' element={<Mahesh/>}/>
+            <Route path='/msr' element={<Mahesh/>}/>
           </Routes>
         </div>
       </BrowserRouter>
