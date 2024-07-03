@@ -13,13 +13,13 @@ width: 40%;
 
 .about-us-contents h1{
     color: #6C63FF;
-    font-size: max(4vw, 20px);
-    margin-bottom: 1vw;
+    font-size: max(4vw, 30px);
+    margin-bottom: max(1vw,20px);
     font-weight: 600;
 }
 
 .about-us-contents h5{
-    font-size: max(1vw,25px);
+    font-size: max(1vw,20px);
     text-align: justify;
 }
 
@@ -28,3 +28,24 @@ width: 40%;
 }
 
 
+@media (max-width:650px){
+    .about-us-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 50px;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .about-us-contents{
+        width: 90%;
+    }
+
+    .about-us-image{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+   
+}
