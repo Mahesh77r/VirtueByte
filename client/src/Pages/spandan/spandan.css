@@ -1,0 +1,38 @@
+.Contact {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .Contact h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .Contact .Mahesh, 
+  .Contact .Spandan, 
+  .Contact .Laxminarayan {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Contact h2 {
+    color: #555;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .Contact .Mahesh h2, 
+  .Contact .Spandan h2, 
+  .Contact .Laxminarayan h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
