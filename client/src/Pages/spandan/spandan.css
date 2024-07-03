@@ -31,7 +31,7 @@
   .Contact .Mahesh h2, 
   .Contact .Spandan h2, 
   .Contact .Laxminarayan h2 {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: flex-start;
   }
