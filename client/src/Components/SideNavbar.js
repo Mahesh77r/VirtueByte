@@ -7,7 +7,7 @@ export const SideNavbar = ({navigation,  isSideNavbarOpen, toggleSideNavbar }) =
   return (
   <>
     <div
-      className={`lg:bg-[#000D27] min-h-screen ${isSideNavbarOpen ? "w-64" : "w-16 "}
+      className={`lg:bg-[#000D27] min-h-screen ${isSideNavbarOpen ? "lg:w-64 md:32" : "w-16"}
        duration-700 px-4 z-[1000] bg-white`}
       style={{ position: "fixed"}}
     >
