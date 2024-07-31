@@ -24,10 +24,12 @@ function App() {
           navigation={navigation}
           isSideNavbarOpen={isSideNavbarOpen}
           toggleSideNavbar={toggleSideNavbar}
+          setIsSideNavbarOpen={setIsSideNavbarOpen}
         />
         <div className={`flex-1 overflow-x-hidden ms-14 ${contentMargin} duration-700 `}>
           <Routes>
             <Route path='/msr' element={<Mahesh/>}/>
+            <Route path='/msr2' element={<Mahesh/>}/>
             <Route path='/spa' element={<Spandan/>}/>
             <Route path='/lax' element={<Laksh/>}/>
           </Routes>
